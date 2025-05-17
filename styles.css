@@ -1,4 +1,19 @@
 body{
     margin: 0;
     box-sizing: border-box;
+    background-image: url(img/fondo-lila.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px 60px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header p {
+    font-size: 30px;
+    
 }

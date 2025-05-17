@@ -29,26 +29,34 @@ header i {
 .container {
     display: flex;
     gap: 30px;
+    margin-top: 150px;
 }
 
 aside {
     background-color: #000;
     color: #fff;
     padding: 20px;
-    padding-top: 70px;
-    position: relative;
     height: auto;
     text-align: center;
     width: 40%;
+    margin-bottom: 80px;
+    border-radius: 20px;
 }
 
 img[src="img/imagen-chica.png"] {
-    position: absolute;
-    display: none;
+    border-radius: 20px;
+    margin-top: -130px;
+    width: 200px;
 }
 
 aside > p {
     color: #ccc;
+    border: 10px;
+    background-color: #222;
+    padding: 10px 20px;
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 10px;
 }
 
 .lista-redes-sociales {
@@ -60,7 +68,7 @@ aside > p {
 .lista-redes-sociales i {
     padding: 12px;
     border-radius: 5px;
-    background-color: #333;
+    background-color: #222;
     width: 15px;
     height: 15px;
 }
@@ -87,7 +95,7 @@ aside > p {
 }
 
 .lista-datos-secundario {
-    background-color: #333;
+    background-color: #222;
     padding: 20px;
     border-radius: 20px;
 }
@@ -95,4 +103,92 @@ aside > p {
 .lista-datos-secundario li {
     display: flex;
     align-items: center;
+    padding: 10px 0;
+    border-bottom: 2px solid #555;
+    gap: 20px;
+}
+
+.lista-datos-secundario li:last-child {
+    border: none;
+}
+
+.lista-datos-secundario i {
+    padding: 15px;
+    background-color: #000;
+    border-radius: 10px;
+}
+
+.lista-datos-secundario li > div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.lista-datos-secundario li p {
+    margin: 0;
+}
+
+.lista-datos-secundario li:nth-child(1) i {
+    color: #c645c6;
+}
+
+.lista-datos-secundario li:nth-child(2) i {
+    color: #82b87f;
+}
+
+.lista-datos-secundario li:nth-child(3) i {
+    color: #dca2dc;
+}
+
+.lista-datos-secundario li:nth-child(4) i {
+    color: #d392e3;
+}
+
+.descripcion {
+    color: #ccc;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+aside button {
+    border: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    background-image: linear-gradient(to left, #dba076, #d83eb7);
+    color: #fff;
+    font-size: 15px;
+}
+
+aside button i {
+    margin-right: 10px;
+}
+
+.sub-container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.sub-container nav {
+    background-color: #000;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.sub-container nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sub-container nav ul li {
+    text-align: center;
+}
+
+.sub-container nav ul li a {
+    color: #ccc;
+    text-decoration: none;
 }
